@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49A1B67826A612B10007D2A6 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1B67726A612B10007D2A6 /* Entry.swift */; };
+		49A1B67A26A6146F0007D2A6 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1B67926A6146F0007D2A6 /* EntryController.swift */; };
+		49A1B67C26A619280007D2A6 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1B67B26A619280007D2A6 /* EntryListTableViewController.swift */; };
+		49A1B67F26A61C6D0007D2A6 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1B67E26A61C6D0007D2A6 /* DateExtension.swift */; };
+		49A1B68126A622B60007D2A6 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1B68026A622B60007D2A6 /* EntryDetailViewController.swift */; };
+		49A1B68B26A778730007D2A6 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1B68A26A778730007D2A6 /* Journal.swift */; };
+		49A1B68D26A779AC0007D2A6 /* JournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1B68C26A779AC0007D2A6 /* JournalController.swift */; };
+		49A1B68F26A78E640007D2A6 /* JournalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1B68E26A78E640007D2A6 /* JournalListViewController.swift */; };
 		7EDA120F259D233600BBD350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA120E259D233600BBD350 /* AppDelegate.swift */; };
 		7EDA1211259D233600BBD350 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA1210259D233600BBD350 /* SceneDelegate.swift */; };
 		7EDA1216259D233600BBD350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDA1214259D233600BBD350 /* Main.storyboard */; };
@@ -15,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49A1B67726A612B10007D2A6 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		49A1B67926A6146F0007D2A6 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		49A1B67B26A619280007D2A6 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		49A1B67E26A61C6D0007D2A6 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		49A1B68026A622B60007D2A6 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		49A1B68A26A778730007D2A6 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		49A1B68C26A779AC0007D2A6 /* JournalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalController.swift; sourceTree = "<group>"; };
+		49A1B68E26A78E640007D2A6 /* JournalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListViewController.swift; sourceTree = "<group>"; };
 		7EDA120B259D233600BBD350 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDA120E259D233600BBD350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EDA1210259D233600BBD350 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +51,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49A1B66C26A611920007D2A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7EDA1227259D237600BBD350 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49A1B66D26A611C90007D2A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49A1B67726A612B10007D2A6 /* Entry.swift */,
+				49A1B68A26A778730007D2A6 /* Journal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49A1B66E26A611D10007D2A6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49A1B67026A611EF0007D2A6 /* ModelControllers */,
+				49A1B66F26A611DE0007D2A6 /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49A1B66F26A611DE0007D2A6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49A1B68E26A78E640007D2A6 /* JournalListViewController.swift */,
+				49A1B67B26A619280007D2A6 /* EntryListTableViewController.swift */,
+				49A1B68026A622B60007D2A6 /* EntryDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		49A1B67026A611EF0007D2A6 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				49A1B67926A6146F0007D2A6 /* EntryController.swift */,
+				49A1B68C26A779AC0007D2A6 /* JournalController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		49A1B67D26A61C590007D2A6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				49A1B67E26A61C6D0007D2A6 /* DateExtension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		7EDA1202259D233600BBD350 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +123,11 @@
 		7EDA120D259D233600BBD350 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				49A1B67D26A61C590007D2A6 /* Helper */,
+				49A1B66E26A611D10007D2A6 /* Controllers */,
+				49A1B66D26A611C90007D2A6 /* Models */,
+				49A1B66C26A611920007D2A6 /* Views */,
 				7EDA1223259D234200BBD350 /* Resources */,
-				7EDA1227259D237600BBD350 /* Storyboards */,
 			);
 			path = Journal;
 			sourceTree = "<group>";
@@ -150,7 +222,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A1B67826A612B10007D2A6 /* Entry.swift in Sources */,
+				49A1B68D26A779AC0007D2A6 /* JournalController.swift in Sources */,
+				49A1B67F26A61C6D0007D2A6 /* DateExtension.swift in Sources */,
 				7EDA120F259D233600BBD350 /* AppDelegate.swift in Sources */,
+				49A1B68B26A778730007D2A6 /* Journal.swift in Sources */,
+				49A1B67C26A619280007D2A6 /* EntryListTableViewController.swift in Sources */,
+				49A1B68F26A78E640007D2A6 /* JournalListViewController.swift in Sources */,
+				49A1B67A26A6146F0007D2A6 /* EntryController.swift in Sources */,
+				49A1B68126A622B60007D2A6 /* EntryDetailViewController.swift in Sources */,
 				7EDA1211259D233600BBD350 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
