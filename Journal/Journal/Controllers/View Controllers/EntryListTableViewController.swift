@@ -65,9 +65,7 @@ class EntryListTableViewController: UITableViewController {
             
             let entryToDelete = journal.entries[indexPath.row]
             
-            
             EntryController.deleteEntry(entry: entryToDelete, journal: journal)
-            
             
             //EntryController.sharedInstance.deleteEntry(entry: entryToDelete)
             

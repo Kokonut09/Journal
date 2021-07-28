@@ -19,11 +19,8 @@ class JournalListViewController: UIViewController, UITableViewDataSource, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        journalListTableView.reloadData()
-       // viewWillAppear(true)
+        JournalController.sharedInstance.loadFromPersistentStorage()
 
-        
-        
         journalListTableView.delegate = self
         journalListTableView.dataSource = self
         
@@ -81,6 +78,16 @@ class JournalListViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     
+     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            let journalToDelete = JournalController.sharedInstance.journals[indexPath.row]
+            
+            JournalController.sharedInstance.delete(journal: journalToDelete)
+        
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        
